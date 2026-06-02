@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOG</title>
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link
+    href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,700;1,6..12,1000&display=swap"
+    rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+body {
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    /*-------------header--------------*/
+    .about {
+        width: 1263px;
+        height: 350px;
+        background-image: linear-gradient(rgb(0, 0, 0, 0.7), rgb(0, 0, 0, 0.7)), url("bl.jpeg");
+        background-position: bottom;
+        background-size: cover;
+        position: relative;
+    }
+
+    #Logo {
+        width: 150px;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    .navlinks {
+        display: flex;
+        float: right;
+        margin-top: -30px;
+        padding-right: 80px;
+    }
+
+    .navlinks ul li {
+        display: inline-block;
+        padding-right: 28px;
+        margin-top: -15px;
+    }
+
+    #links {
+        color: rgb(255, 191, 0);
+        padding-right: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+
+    }
+
+
+    #links::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        display: block;
+        margin: auto;
+        background: #ff0000;
+        transition: 0.5s;
+    }
+
+    #links:hover::after {
+        width: 100%;
+    }
+
+    .abouttext {
+        text-align: center;
+        font-size: 34px;
+        color: white;
+        padding-top: 50px;
+    }
+@media (max-width:650px){
+#Logo{
+    width: 120px;
+        padding-top: 40px;
+        margin-left: -30px;
+}
+.abouttext h3{
+    text-align: left;
+    padding-left: 50px;
+}
+.navlinks ul li{
+        display: block;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        
+    }
+    .navlinks ul{
+        margin-left: -995px;
+        margin-top: -50px;
+        background-color: rgb(0, 0, 0);
+        height: 350px;
+        z-index: 1;
+      
+    }
+    #links{
+        color: white;
+        text-align: left;
+        display: block;
+        padding-top: 50px;
+        margin-bottom: -30px;
+        margin-left: -20px;
+        
+    }
+    #close{
+    position: absolute;
+margin-left: -985px;
+margin-top: -35px;
+font-size: 30px;
+z-index: 3;
+cursor: pointer;
+transition: 4s;
+display: block;
+}
+
+#menu{
+    padding-left: 270px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: -37px;
+    position: absolute;
+    display: block;
+}
+#navlinkabc{
+    display: none;
+}
+.navlinks {
+            
+            display: none;
+            position: relative; 
+            z-index: 1000; 
+        }
+}
+.fa-bars{
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+@media (max-width:650px){
+    .div2 h3{
+    font-size: 15px;
+    
+    
+
+    }
+
+    
+}
+
+
+
+
+
+.recent h3{
+    font-size: 39px;
+    padding-left: 50px;
+    padding-top: 60px;
+}
+.post1{
+    display: flex;
+    padding-left: 50px;
+    padding-bottom: 50px;
+}
+#download1{
+    width: 340px;
+    border-radius: 30px; 
+    height: 300px;
+}
+.text{
+    padding-left: 40px;
+}
+.text h3{
+    font-size: 25px;
+}
+.text h1{
+    font-size: 17px;
+    padding-right: 60px;
+}
+
+.flex1{
+   margin-top: -30px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 70px;
+}
+.div2 h3{
+    font-size: 37px;
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+#download2{width: 300px;
+    border-radius: 30px; 
+    height: 300px;}
+.postb{
+    display: flex;
+    padding-left: 50px;
+    padding-top: 30px;
+}
+#p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.cal h3{
+    font-size: 42px;
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+.flex2{
+    padding-top: 30px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+}
+
+.postc{
+    padding-left: 50px;
+    display: flex;
+    padding-top: 40px;
+    padding-bottom: 30px;
+}
+#download3{
+    width: 300px;
+    border-radius: 30px; 
+    height: 300px;
+}
+.pf h3{
+    font-size: 37px;
+    text-align: center;
+    border-bottom: 5px solid red;
+}
+.flex3{
+   
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+}
+
+.about1 h3{
+    margin-top: -10px;
+text-align: center;
+font-size: 30px;
+}
+.about1 p{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(59, 54, 54);
+   margin-top: -10px;
+    padding-bottom: 30px;
+    }
+.icon{
+    text-align: center;
+    word-spacing: 10px;
+    padding-bottom: 50px;
+}
+#face{
+    font-size: 22px;
+}
+.div1{
+    padding-bottom: 40px;
+    padding-left: 1150px;
+
+}
+
+#up{
+    background-color: rgb(255, 0, 0);
+padding: 9px;
+color: white;
+border-radius: 5px;
+}
+#up:hover{
+    color: #000000;
+    background-color: rgb(10, 10, 10);
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.footer{
+    background-color: black;
+border-top-left-radius: 180px;
+border-bottom-right-radius: 30px;
+display: flex;
+}
+.footer1{
+padding-left: 140px;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+.footer1 h3{
+    font-size: 14px;
+    color: white;
+
+}
+#log{
+    width: 150px;
+}
+.footer2 {
+    color: white;
+    padding-top: 82px;
+    padding-left: 80px;
+}
+.footer2 h3{
+    color: rgb(255, 0, 0);
+margin-bottom: 5px;
+    
+}
+.footer2 h3:hover{
+    color: rgb(255, 234, 0);
+    
+}
+#link{
+    text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+#link:hover{
+    color: yellow;
+   
+}
+.addres{
+    color: white;
+    padding-top: 82px;
+    padding-left: 80px;
+}
+.addres h3{
+    color: rgb(255, 0, 0);
+
+}
+.addres h3:hover{
+    color: rgb(255, 234, 0);
+}
+.addres p{
+    font-size: 13px;
+    
+}
+.addres p:hover{
+    color: rgb(255, 234, 0);
+}
+.addres h6{
+    font-size: 14px;
+    margin-top: -10px;
+    text-decoration: underline;
+    color: rgb(255, 234, 0);
+}
+.addres h6:hover{
+    color: rgb(0, 255, 174);
+}
+.newsletter{
+    color: rgb(255, 0, 0);
+    padding-top: 82px;
+    padding-left: 80px;
+   
+    
+}
+.newsletter h3:hover{
+    color: rgb(255, 234, 0);
+}
+
+#email{
+    
+    border: 2px solid white;
+    width: 150px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background-color: black;
+}
+.love{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+.love h3{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.inputmove{
+    padding-top: 10px;
+}
+#mailicon{
+    padding-right: 10px;
+    font-size: 24px;
+    padding-top: 12px;
+}
+.flex{
+    display: flex;
+}
+#arrowicon{
+    padding-left: 8px;
+    font-size: 22px;
+    
+}
+@media (max-width:650px) {
+    .footer{
+        display: block;
+    }    
+    .footer1{
+        margin-left: -60px;
+        margin-bottom: -150px;
+    }
+   .addres P{
+    margin-top: -30px;
+   }
+   .footer2 {
+    margin-top: -100px;
+    
+   }
+   .footer2 h3{
+   padding-bottom: 10px;
+   }
+#link{
+    font-size: 10px;
+    
+}
+.newsletter {
+    margin-top: -80px;
+    
+}
+.inputmove{
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+.addres h3{
+    padding-bottom: 14px;
+}
+.addres h6{
+    margin-top: -10px;
+}
+#mailicon{
+    margin-top: -20px;
+}
+.div1{
+        padding-bottom: 40px;
+        margin-left: -1120px;
+    
+    }
+    .post1{
+        display: block;
+    }
+    #download1{
+        margin-left: -30px;
+        width: 250px;
+        height: 250px;
+    }
+    .text h3{
+        margin-left: -70px;
+        font-size: 18px;
+    }
+    .text p{
+        margin-left: -70px;
+        font-size: 14px;
+    }
+    .flex1{
+   margin-top: -40px;
+   padding-right: 20px;
+   margin-left: -30px;
+    
+}
+.flex2{
+   margin-top: -40px;
+   padding-right: 20px;
+   margin-left: -30px;
+    
+}
+.flex3{
+   margin-top: -40px;
+   padding-right: 20px;
+   margin-left: -30px;
+    
+}
+.text h1{
+    margin-left: -70px;
+    margin-right: -20px;
+}
+.postb{
+    display: block;
+}
+.postc{
+    display: block;
+}
+#download2{
+        margin-left: -30px;
+        width: 250px;
+        height: 250px;
+    }
+    #download3{
+        margin-left: -30px;
+        width: 250px;
+        height: 250px;
+    }
+    .text p{
+        padding-right: 20px;
+    }
+}
+</style>
+<body>
+
+
+<section>
+    <div class="about">
+        <div id="scol"  class="logo">
+            <a href="IICT.html"><img id="Logo" src="logo.png" alt=""></a>
+        </div>
+
+
+        <div class="navlinks " id="navlinkabc">
+            <i  id="close" class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hidemenu()" ></i>
+            <ul>
+
+                <li> <a id="links" href="IICT.html">HOME</a></li>
+                <li> <a id="links" href="About.html">ABOUT</a></li>
+                <li> <a id="links" href="books.html">BOOKS</a></li>
+                <li> <a id="links" href="Blog.html">BLOG</a></li>
+                <li> <a id="links" href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+         <i id="menu" class="fa-solid fa-bars" style="color: #ffffff;" onclick="showmenu()"></i>
+
+        <div class="abouttext">
+            <h3>OUR BLOG'S</h3>
+        </div>
+    </div>
+</section>
+
+
+<!-------------Trend-------------------->
+<section>
+<div class="recent">
+    <h3>Recent Post</h3>
+</div>
+
+<div class="div2">
+    <h3>Discrete Mathematics</h3>
+</div>
+<div class="post1">
+    <img id="download1" src="download1.jpeg" alt="">
+    <div class="text">
+        <h3>A perfect metaphor for discrete mathematics! Discrete Mathematics <br>
+            with Applications,. Fourth Edition. Susanna S. Epp <br>
+        </h3>
+        <p id="fonta"><i id="font" class="fa-solid fa-user" style="color: #000000;"></i> Richard Stratton. Senior
+            ...
+            <span id="a"><i class="fa-solid fa-calendar-week" style="color: #ff7300;"></i>. January 1,
+                2019.</span>
+        </p>
+        <h1>
+            "Discrete Mathematics with Applications" is a textbook that covers various topics in discrete mathematics and their applications in computer science and other fields. The content typically includes fundamental concepts and principles related to discrete structures, logic, algorithms, and combinatorics. Here's a general description of the key topics covered in many discrete mathematics textbooks:</h1>
+            
+        </div>
+        </div>
+</section>
+        
+<section>
+    
+
+        <div class="flex1">
+           <p>"Discrete Mathematics with Applications" is a comprehensive textbook that delves into the principles and applications of discrete mathematics. The content encompasses foundational concepts such as logic and propositional calculus, providing an introduction to logical reasoning, truth tables, and the properties of logical connectives. Set theory is explored, covering basic operations, cardinality, and counting principles, illustrated through Venn diagrams. The book also delves into relations and functions, examining their definitions, properties, and classifications like equivalence relations and partial orderings.
+
+            Combinatorics is a significant focus, covering fundamental counting principles, the binomial theorem, and the pigeonhole principle. Graph theory is introduced with discussions on basic graph terminology, types of graphs, and algorithms such as depth-first search (DFS) and breadth-first search (BFS). Discrete probability is addressed, including basic probability concepts, conditional probability, and random variables. Algorithmic concepts and efficiency analysis are incorporated, providing students with a foundation in algorithm design and complexity.
+            
+            The textbook also covers number theory, exploring topics like divisibility, prime numbers, and modular arithmetic. It introduces formal languages and automata, covering regular languages, finite automata, and context-free languages. The application of discrete mathematics in cryptography is discussed, encompassing the basics of encryption and public-key cryptography. The book is a valuable resource for undergraduate students in computer science and mathematics, offering a structured and comprehensive approach to discrete mathematics that is foundational for various areas within computer science, including algorithms, data structures, and theoretical computer science.</p>
+    
+    </div>
+    <div class="cal">
+        <h3>Calculus</h3>
+    </div>
+
+</section>
+<div class="postb">
+    <img id="download2" src="calblog.jpg" alt="">
+    <div class="text">
+        <h3>In mathematics education, calculus denotes courses of elementary  analysis,
+            which are mainly devoted to sthe study.<br> The word ...
+            Differential calculus </h3>
+        <p><i id="fontb" class="fa-solid fa-user" style="color: #000000;"></i> Maria Gaetana Agnesi
+            ...
+            <span id="ab"><i class="fa-solid fa-calendar-week" style="color: #ff7300;"></i>.August 3
+                , in 1748 .</span>
+        </p>
+        <p><span id="p">"Calculus is the branch of mathematics that deals with continuous  change. Calculus
+            is
+            also called infinitesimal calculus or “the calculus of
+            Integrals"</p> </span>
+        </div>
+    </div>
+<div class="flex2">
+    <p>Calculus is a branch of mathematics that revolves around the study of rates of change and accumulation of quantities. At its core, calculus is comprised of two main branches: differential calculus and integral calculus. Differential calculus is concerned with understanding and analyzing how quantities change, focusing on concepts such as derivatives, rates of change, and slopes of curves. Derivatives, in particular, are fundamental in capturing the instantaneous rate of change of a function at any given point.
+
+        On the other hand, integral calculus deals with the accumulation of quantities and the computation of areas under curves. Integrals, both definite and indefinite, are used to find the total accumulated quantity represented by a function over a given interval. The Fundamental Theorem of Calculus establishes a crucial connection between these two branches, demonstrating how derivatives and integrals are inverse operations.
+        
+        Calculus has broad applications across various fields, including physics, engineering, economics, and biology, providing a powerful tool for modeling and analyzing continuous phenomena. Concepts such as limits, continuity, and convergence play a pivotal role in understanding the foundations of calculus. Overall, calculus serves as a cornerstone in mathematical understanding, enabling the formulation and solution of problems related to change and accumulation in diverse real-world scenarios.</p>
+</div>
+
+
+<div class="pf">
+    <h3>Programming Fundamental</h3>
+</div>
+
+<div class="postc">
+
+    <img id="download3" src="CSHARP.jpeg" alt="">
+    <div class="text">
+        <h3>This course will introduce you to a powerful problem-solving process<br>Seven
+            Steps—which you can use to  <br>solve any programming problem.</h3>
+        <p><i id="font" class="fa-solid fa-user" style="color: #000000;"></i> Kenneth Leroy Busbee.
+            ...
+            <span id="a"><i class="fa-solid fa-calendar-week"
+                    style="color: #ff7300;"></i>.15-Dec-2018 </span>
+        </p>
+        <p><span id="p"> Computer programming is the process of writing instructions that direct the<br> computer to 
+            perform a set of tasks. All software programs adhere to<br> certain programming principles
+            and concepts. </span></p>
+        </div>
+    </div>
+<div class="flex3">
+    <p>Programming fundamentals encompass the foundational principles and concepts essential for understanding and practicing computer programming. At its core, it involves the systematic instruction of a computer to perform specific tasks or solve problems. Key components of programming fundamentals include the understanding of variables, data types, and operators, which form the building blocks for manipulating and storing information. Control structures, such as loops and conditional statements, enable the creation of logical and iterative processes, facilitating the execution of different code paths.
+
+        Functions and procedures provide a modular approach to programming, allowing for the organization and reuse of code. Data structures, like arrays and linked lists, enable the efficient organization and storage of data within programs. Algorithms, the step-by-step procedures for solving specific problems, are crucial for efficient problem-solving and are often closely tied to data structures.
+        
+        Understanding the principles of input/output operations, error handling, and debugging is integral to producing robust and effective software. Additionally, concepts related to abstraction and modularity contribute to the creation of scalable and maintainable code.
+        
+        Programming languages, serving as the means of communication between humans and computers, are chosen based on the specific requirements of a task or project. The application of programming fundamentals extends beyond mere syntax, emphasizing the development of problem-solving skills and a structured approach to designing and implementing solutions. Proficiency in programming fundamentals lays the groundwork for more advanced topics in software development and is a fundamental skill for individuals pursuing careers in computer science and related fields.</p>
+</div>
+
+<section>
+    <div class="about1">
+    <h3>About Us</h3>
+    <p>A library is a collection of books, and possibly other materials and media, that is accessible for use by
+        its members and members of allied institutions.</p>
+</div>
+<div class="icon">
+                
+
+    <a target="_blank" href="https://www.facebook.com/abdullah.arain.9250595?mibextid=LQQJ4d"> <i id="face"    class="fa-brands fa-facebook-f fa-bounce" style="color: #005eff;"></i></a>
+     <a target="_blank" href="https://www.instagram.com/itx_abdullah999?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"><i id="face" class="fa-brands fa-instagram fa-spin" style="color: #ff0066;"></i></a>
+     <a href="https://x.com/abdulla69012822/status/1650033197634158593?s=46&t=8keywiHOAuNBFBcooFylWA"><i id="face" class="fa-brands fa-twitter fa-beat" style="color: #000000;"></i></a>
+    <a  target="_blank" href="https://www.linkedin.com/in/abdullah-arain123/?originalSubdomain=pk"><i id="face"   class="fa-brands fa-linkedin-in fa-beat" style="color: #2b00ff;"></i></a> 
+
+ </div>
+
+
+<div class="div1">
+    <div class="div">
+        <a href="#scol"><i id="up" class="fa-solid fa-arrow-up-from-bracket fa-flip" style="color:rgb(255, 255, 255);"></i></a>
+    </div>
+</div>
+
+ <!--------------footer-------------->    
+ <section>
+    <div class="footer">
+    <div class="footer1">
+        <img id="log" src="logo.png" alt="">
+        <h3>Download our books on our website <br>in free and now its more easy to <br>finding any question thanks <br>for visiting our website </h3>
+    </div>
+    <div class="addres">
+        <h3>ADDRESS</h3>
+        <p>korangi creek paf <br>whitefield banglore <br>karnataka,PIN 560066</p> <h6>info@EDUFORD.gmail.com</h6>
+    </div>
+    <div class="footer2">
+        <h3>LINKS</h3>
+        <li><a id="link" href="IICT.html">HOME</a></li>
+        <li><a id="link"   href="About.html">ABOUT</a></li>
+        <li><a   id="link"   href="books.html">BOOKS</a></li>
+        <li><a  id="link"   href="Blog.html">BLOG</a></li>
+        <li><a  id="link"   href="contact.html">CONTACT</a></li>
+        
+    </div>
+    <div class="newsletter">
+        <h3>NEWS LETTER </h3>
+        <div class="flex">
+        <i id="mailicon" class="fa-solid fa-envelope" style="color: #ffdd00;"></i>
+        <div class="inputmove">
+        
+           <input type="email" id="email" placeholder="Enter your email "><a href="mailto:arainabdullah225@gmail.com"><i id="arrowicon" class="fa-solid fa-arrow-right fa-beat" style="color: #fff700;"></i></a>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="love">
+        
+        <h3>All Copyright © Reserved </h3>
+    </div>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+    
+    function toggleMenu() {
+        var navMenu = document.getElementById("navlinkabc");
+        navMenu.style.display = (navMenu.style.display === "block") ? "none" : "block";
+    }
+
+    function hidemenu() {
+        var navMenu = document.getElementById("navlinkabc");
+        navMenu.style.display = "none";
+        document.getElementById('menu').style.display="block";
+    }
+
+    function showmenu() {
+        var navMenu = document.getElementById("navlinkabc");
+        navMenu.style.display = "block";
+        document.getElementById('menu').style.display="none";
+       
+    }
+</script>
+</html>

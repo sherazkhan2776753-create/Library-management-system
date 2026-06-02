@@ -1,0 +1,845 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200;0,6..12,300;0,6..12,400;0,6..12,700;1,6..12,1000&display=swap"
+        rel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>CONTACT</title>
+</head>
+<style>
+    body {
+        padding: 0%;
+        margin: 0%;
+        font-family: 'Nunito Sans', sans-serif;
+    }
+
+    .header {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("cafeteria.png");
+        height: 400px;
+        width: 1263px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+
+    #logo {
+        width: 150px;
+        padding-left: 50px;
+        padding-top: 30px;
+    }
+
+    .navlinks {
+        display: flex;
+        float: right;
+        margin-top: -30px;
+        padding-right: 80px;
+    }
+
+    .navlinks ul li {
+        display: inline-block;
+        padding-right: 28px;
+        margin-top: -15px;
+    }
+
+    #links {
+        color: rgb(255, 191, 0);
+        padding-right: 30px;
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 14px;
+
+    }
+
+    #links::after {
+        content: '';
+        width: 0%;
+        height: 2px;
+        display: block;
+        margin: auto;
+        background: #ff0000;
+        transition: 0.5s;
+    }
+
+    #links:hover::after {
+        width: 100%;
+    }
+
+    .contact {
+        text-align: center;
+        font-size: 34px;
+        color: white;
+        padding-top: 50px;
+    }
+
+    /*-----------after-header------------*/
+    .after {
+        padding-top: 90px;
+        padding-left: 100px;
+    }
+
+    #img {
+        width: 550px;
+        border-radius: 30px;
+
+    }
+
+   
+
+
+
+    
+
+
+    .certificate {
+        padding-left: 90px;
+        padding-right: 90px;
+    }
+
+    .certificate h3 {
+        font-size: 35px;
+        padding-top: 50px;
+    }
+
+    .certificate p {
+        margin-top: -15px;
+    }
+
+    .form {
+        padding-top: 50px;
+        padding-left: 140px;
+        padding-bottom: 50px;
+    }
+
+    #a {
+        width: 392px;
+        height: 20px;
+        background-color: rgb(216, 211, 211);
+        border-radius: 5px;
+        padding-left: 8px;
+
+        border: transparent;
+    }
+
+    #b {
+        width: 392px;
+        height: 20px;
+        background-color: rgb(216, 211, 211);
+        border-radius: 5px;
+        padding-left: 8px;
+        border: transparent;
+
+    }
+
+    #c {
+        width: 392px;
+        padding-bottom: 130px;
+        padding-top: 10px;
+        border: transparent;
+        background-color: rgb(216, 211, 211);
+        border-radius: 5px;
+        padding-left: 8px;
+    }
+
+    .form{
+        display: flex;
+        margin-left: -50px;
+    }
+   
+   
+    .forma:hover{
+        box-shadow: 0px 0px 20px aqua;
+transform: rotate(6deg);
+border-radius: 20px;
+    }
+
+    .forma {
+        padding-right: 52px;
+        transition: 3s;
+        box-shadow: 1px 1px 4px gray;
+        border-radius: 30px;
+        border-color: transparent;
+        padding-left: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .form1 h3 {
+        font-size: 28px;
+        margin-top: -20px;
+    }
+
+    #bttna {
+        background-color: white;
+        box-shadow: 0px 0px 13px gray;
+        color: black;
+        padding: 7px 20px;
+        border-radius: 7px;
+        border-top: 2px solid red;
+        border-bottom: 2px solid red;
+        border-left: 2px solid aqua;
+        border-right: 2px solid aqua;
+        transition: 2s;
+    }
+
+    #bttna:hover {
+
+        box-shadow: 0px 0px 0px;
+        background-color: #000000;
+        color: white;
+    }
+
+    .btn {
+        padding-left: 10px;
+        padding-top: 7px;
+    }
+.map{
+    font-size: 32px;
+    text-align: center;
+    padding-top: 60px;
+    padding-bottom: 50px;
+}
+iframe{
+    width: 90%;
+    border-radius: 25px;
+    filter: invert(100%);
+    transition: 3s;
+}
+iframe:hover{
+box-shadow: 0px 0px 30px rgb(255, 0, 0);
+transform: rotate(-4deg);
+}
+.imagescertificate{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+#abc:hover{
+    transition: .2s linear;
+    transform:scale(1.3);
+    
+}
+#abc1:hover{
+    transition: .2s linear;
+    transform:scale(1.3);
+    
+}
+.contacticon{
+padding-left: 70px;
+font-size: 23px;
+}
+.contacticon p{
+    font-size: 14px;
+    padding-left: 50px;
+    margin-top: -20px;
+}
+
+#edu{
+    padding-left: 10px;
+    padding-right: 10px;
+    color: red;
+}
+#edui{
+font-size: 32px;
+}
+.phone h3{
+    padding-left: 30px;
+}
+#i{
+    margin-left: -26px;
+    padding-right: 10px;
+}
+.phone p{
+    font-size: 14px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+}
+#ema1{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.ema p{
+    padding-left: 55px;
+    font-size: 14px;
+}
+.about1 h3{
+    padding-top: 10px;
+text-align: center;
+font-size: 30px;
+}
+.about1 p{
+    text-align: center;
+    font-size: 14px;
+    color: rgb(59, 54, 54);
+   margin-top: -10px;
+    padding-bottom: 30px;
+    }
+.icon{
+    text-align: center;
+    word-spacing: 10px;
+    padding-bottom: 50px;
+}
+#face{
+    font-size: 22px;
+}
+
+
+
+.footer{
+    background-color: black;
+border-top-left-radius: 180px;
+border-bottom-right-radius: 30px;
+display: flex;
+}
+.footer1{
+padding-left: 140px;
+padding-top: 80px;
+padding-bottom: 80px;
+}
+.footer1 h3{
+    font-size: 14px;
+    color: white;
+
+}
+#log{
+    width: 150px;
+}
+.footer2 {
+    color: white;
+    padding-top: 82px;
+    padding-left: 80px;
+}
+.footer2 h3{
+    color: rgb(255, 0, 0);
+
+    
+}
+.footer2 h3:hover{
+    color: rgb(255, 234, 0);
+    
+}
+#link{
+    text-decoration: none;
+  color: white;
+  font-size: 13px;
+}
+#link:hover{
+    color: yellow;
+   
+}
+.addres{
+    color: white;
+    padding-top: 82px;
+    padding-left: 80px;
+}
+.addres h3{
+    color: rgb(255, 0, 0);
+}
+.addres h3:hover{
+    color: rgb(255, 234, 0);
+}
+.addres p{
+    font-size: 13px;
+    padding-top: 20px;
+}
+.addres p:hover{
+    color: rgb(255, 234, 0);
+}
+.addres h6{
+    font-size: 14px;
+    padding-top: 5px;
+    text-decoration: underline;
+    color: rgb(255, 234, 0);
+}
+.addres h6:hover{
+    color: rgb(0, 255, 174);
+}
+.newsletter{
+    color: rgb(255, 0, 0);
+    padding-top: 82px;
+    padding-left: 80px;
+   
+    
+}
+.newsletter h3:hover{
+    color: rgb(255, 234, 0);
+}
+
+#email{
+    
+    border: 2px solid white;
+    width: 150px;
+    padding: 3px 7px;
+    border-radius: 4px;
+    background-color: black;
+}
+.love{
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+.love h3{
+    text-align: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-size: 15px;
+}
+.inputmove{
+    padding-top: 10px;
+}
+#mailicon{
+    padding-right: 10px;
+    font-size: 24px;
+    padding-top: 12px;
+}
+.flex{
+    display: flex;
+}
+#arrowicon{
+    padding-left: 8px;
+    font-size: 22px;
+    
+}
+
+.div1{
+    padding-bottom: 40px;
+    padding-left: 1150px;
+
+}
+
+#up{
+    background-color: rgb(255, 0, 0);
+padding: 9px;
+color: white;
+border-radius: 5px;
+}
+#up:hover{
+    color: #000000;
+    background-color: rgb(10, 10, 10);
+}
+html{
+    scroll-behavior: smooth;
+}
+@media (max-width:650px) {
+    .footer{
+        display: block;
+    }    
+    .footer1{
+        margin-left: -60px;
+        margin-bottom: -150px;
+    }
+   .addres P{
+    margin-top: -30px;
+   }
+   .footer2 {
+    margin-top: -100px;
+    
+   }
+   .footer2 h3{
+    margin-bottom: 4px;
+   }
+#link{
+    font-size: 10px;
+    
+}
+.newsletter {
+    margin-top: -80px;
+    
+}
+.inputmove{
+    margin-top: -20px;
+    padding-bottom: 30px;
+}
+.addres h6{
+    margin-top: -10px;
+}
+#mailicon{
+    margin-top: -20px;
+}
+.certificate h3{
+margin-left: -40px;
+margin-right: -80px;
+font-size: 32px;
+}
+.certificate p{
+    margin-left: -70px;
+    margin-right: -80px;
+}
+
+.imagescertificate{
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.img1{
+    padding-bottom: 30px;
+    
+}
+.img2{
+    padding-bottom: 30px;
+    
+}
+#abc1{
+width: 270px;
+}
+
+.forma{
+    margin-left: -80px;
+    
+}
+.form1{
+    margin-left: -30px;
+}
+.div1{
+        padding-bottom: 40px;
+        margin-left: -1120px;
+    
+    }
+
+#a{
+    width: 210px;
+}
+#b{
+    width: 250px;
+}
+#c{
+    width: 250px;
+}
+
+
+.form{
+        display:block ;
+       
+    }
+.contacticon{
+    margin-left: -150px;
+    padding-top: 40px;
+}
+
+.contacticon h3{
+
+    font-size: 23px;
+}
+.contacticon p{
+
+font-size: 13.5px;
+}
+.icon{
+    margin-bottom: -60px;
+}
+#logo{
+    width: 120px;
+    margin-left: -30px;
+    padding-top: 35px;
+}
+.contact h3{
+    font-size: 28px;
+    text-align: left;
+    position: absolute;
+    padding-left: 10px;
+
+
+padding-top: 40px;
+}
+#padding{
+  padding-left: 40px;
+}
+#close{
+    position: absolute;
+margin-left: -985px;
+margin-top: -35px;
+font-size: 30px;
+z-index: 3;
+cursor: pointer;
+transition: 4s;
+display: block;
+}
+
+#menu{
+    padding-left: 270px;
+    font-size: 24px;
+    cursor: pointer;
+    margin-top: -37px;
+    position: absolute;
+    display: block;
+}
+#navlinkabc{
+    display: none;
+}
+.navlinks {
+            
+            display: none;
+            position: relative; 
+            z-index: 1000; 
+        }
+
+        .navlinks ul li{
+        display: block;
+        padding-bottom: 25px;
+        padding-left: 30px;
+        
+    }
+    .navlinks ul{
+        margin-left: -995px;
+        margin-top: -50px;
+        background-color: rgb(0, 0, 0);
+        height: 403px;
+        z-index: 1;
+      
+    }
+    #links{
+        color: white;
+        text-align: left;
+        display: block;
+        padding-top: 50px;
+        margin-bottom: -30px;
+        margin-left: -20px;
+        
+    }
+
+}
+
+.fa-bars{
+    display: none;
+}
+.fa-xmark{
+    display: none;
+}
+
+</style>
+
+<body>
+    <!-------header-------->
+    <section>
+        <header>
+            <div class="header">
+                <div class="logo">
+                    <img id="logo" src="logo.png" alt="">
+                </div>
+             
+            <div class="navlinks " id="navlinkabc">
+                <i  id="close" class="fa-solid fa-xmark" style="color: #ffffff;" onclick="hidemenu()" ></i>
+                <ul>
+
+                    <li> <a id="links" href="IICT.html">HOME</a></li>
+                    <li> <a id="links" href="About.html">ABOUT</a></li>
+                    <li> <a id="links" href="books.html">BOOKS</a></li>
+                    <li> <a id="links" href="Blog.html">BLOG</a></li>
+                    <li> <a id="links" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+             <i id="menu" class="fa-solid fa-bars" style="color: #ffffff;" onclick="showmenu()"></i>
+
+
+
+
+                <div class="contact">
+                    <h3>Our Certificate & Online <br><span id="padding">Program  For 2023</span></h3>
+                </div>
+            </div>
+        </header>
+    </section>
+    <!-------after-header------->
+    <div class="certificate">
+        <h3>Our Certificate & Online program</h3>
+        <p>About the Library and Information Science (LIS) Certificate
+
+            The Library and Information Science Program at CWU is here for your future. Our certificate allows you to
+            build upon your knowledge as a library paraprofessional or explore the field for the first time. Join a
+            community of students and educators who care about the world of access, information sharing, digital
+            research methods, archives, and developments in the field.
+
+            This certificate allows you to build solid foundational knowledge, while taking advantage of a variety of
+            elective courses. From engaged instruction, to hands-on examples, you will gain the tools and confidence to
+            start your career in libraries.</p>
+    </div>
+    <div class="imagescertificate">
+        <div class="img1">
+            <img  id="abc1" src="lib.jpeg" alt="">
+        </div>
+        <div class="img2">
+            <img  id="abc" src="lib1.png" alt="">
+        </div>
+        <div class="img2">
+            <img id="abc" src="lib2.jpeg" alt="">
+        </div>
+    </div>
+
+
+    <section>
+        <div class="map">
+            <h3>Embed Location Map</h3>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57933.849955520214!2d66.98606702451598!3d24.834268668335874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f9db0b0a967%3A0x4fd774354a56523e!2sStreet%20Library!5e0!3m2!1sen!2s!4v1703012165662!5m2!1sen!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+    <!-----------email--------------->
+    <section>
+        <div class="form">
+<div class="forma">
+            <form action="https://formspree.io/f/moqgavwn" method="POST">
+                <div class="form1">
+                    <h3>Contact Us</h3>
+                    <label for=""><input id="a" name="First name" autocomplete="off" min="6" required="required"
+                            type="text" placeholder="First Name"></label>
+                            <br>
+                            <br>
+                    <label for=""><input id="a" required="required" name="Last name" type="text" min="6" autocomplete="off"
+                            placeholder="Last Name"></label>
+                    <br>
+                    <br>
+                    <label for=""><input id="b" type="email" autocomplete="off" required="required" name="email"
+                            placeholder="Enter Email"></label>
+                    <br>
+                    <br>
+                    <label for=""><input id="b" type="text" autocomplete="off" required="required" name="suject"
+                            placeholder="Enter Subject"></label>
+                    <br>
+                    <br>
+                    <label for=""> <input id="c" type="text" required="required" autocomplete="off" min="20"
+                            name="message" placeholder="Leave a Comment"></label>
+                    <br>
+                    <br>
+                    <div class="btn">
+                        <a target="_blank" href=""><button id="bttna" type="submit">Explore Now</button></a>
+                    </div>
+
+                </div>
+            </form>
+        </div>
+
+
+            <div class="contacticon">
+               
+                <h3><i id="edui" class="fa-solid fa-house fa-beat-fade" style="color: #ffc800;"></i> <span id="edu">Eduford</span>Street Library</h3>
+                 <p>Street Library
+                242 Fatima Jinnah Rd, Civil Lines,<br> Karachi City, Sindh </p>
+                <div class="phone">
+                    <h3><i id="i" class="fa-solid fa-phone fa-shake" style="color: #ff0000;"></i><span id="edu">Contact</span>Us</h3>
+                    <p>+92 324 1592 420</p>
+                    <P>Monday to Friday 10am to 6pm </P>
+                </div>
+                <div class="ema">
+                    <h3><i id="ema1" class="fa-solid fa-envelope fa-bounce" style="color: #ff0000;"></i><span id="edu">Email</span>Me </h3>
+                    <p>info@edufordlibrary.com</p>
+                </div>
+            </div>
+           
+        </div>
+        
+        
+    </section>
+<section>
+    <div class="about1">
+    <h3>About Us</h3>
+    <p>A library is a collection of books, and possibly other materials and media, that is accessible for use by
+        its members and members of allied institutions.</p>
+</div>
+<div class="icon">
+                    
+ 
+    <a target="_blank" href="https://www.facebook.com/abdullah.arain.9250595?mibextid=LQQJ4d"> <i id="face"    class="fa-brands fa-facebook-f fa-bounce" style="color: #005eff;"></i></a>
+     <a target="_blank" href="https://www.instagram.com/itx_abdullah999?igsh=YzVkODRmOTdmMw%3D%3D&utm_source=qr"><i id="face" class="fa-brands fa-instagram fa-spin" style="color: #ff0066;"></i></a>
+     <a href="https://x.com/abdulla69012822/status/1650033197634158593?s=46&t=8keywiHOAuNBFBcooFylWA"><i id="face" class="fa-brands fa-twitter fa-beat" style="color: #000000;"></i></a>
+    <a  target="_blank" href="https://www.linkedin.com/in/abdullah-arain123/?originalSubdomain=pk"><i id="face"   class="fa-brands fa-linkedin-in fa-beat" style="color: #2b00ff;"></i></a> 
+
+ </div>
+
+
+<div class="div1">
+    <div class="div">
+        <a href="#logo"><i id="up" class="fa-solid fa-arrow-up-from-bracket fa-flip" style="color:rgb(255, 255, 255);"></i></a>
+    </div>
+</div>
+</section>
+<!--------------footer-------------->    
+<section>
+    <div class="footer">
+    <div class="footer1">
+        <img id="log" src="logo.png" alt="">
+        <h3>Download our books on our website <br>in free and now its more easy to <br>finding any question thanks <br>for visiting our website </h3>
+    </div>
+    <div class="addres">
+        <h3>ADDRESS</h3>
+        <p>korangi creek paf <br>whitefield banglore <br>karnataka,PIN 560066</p> <h6>info@EDUFORD.gmail.com</h6>
+    </div>
+    <div class="footer2">
+        <h3>LINKS</h3>
+        <li><a id="link" href="IICT.html">HOME</a></li>
+        <li><a id="link"   href="About.html">ABOUT</a></li>
+        <li><a   id="link"   href="books.html">BOOKS</a></li>
+        <li><a  id="link"   href="Blog.html">BLOG</a></li>
+        <li><a  id="link"   href="contact.html">CONTACT</a></li>
+        
+    </div>
+    <div class="newsletter">
+        <h3>NEWS LETTER </h3>
+        <div class="flex">
+        <i id="mailicon" class="fa-solid fa-envelope" style="color: #ffdd00;"></i>
+        <div class="inputmove">
+        
+           <input type="email" id="email" placeholder="Enter your email "><a href="mailto:arainabdullah225@gmail.com"><i id="arrowicon" class="fa-solid fa-arrow-right fa-beat" style="color: #fff700;"></i></a>
+    </div>
+    </div>
+    </div>
+    
+    </div>
+    <div class="love">
+        
+        <h3>All Copyright © Reserved </h3>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        function toggleMenu() {
+            var navMenu = document.getElementById("navlinkabc");
+            navMenu.style.display = (navMenu.style.display === "block") ? "none" : "block";
+        }
+    
+        function hidemenu() {
+            var navMenu = document.getElementById("navlinkabc");
+            navMenu.style.display = "none";
+            document.getElementById('menu').style.display="block";
+        }
+    
+        function showmenu() {
+            var navMenu = document.getElementById("navlinkabc");
+            navMenu.style.display = "block";
+            document.getElementById('menu').style.display="none";
+           
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
